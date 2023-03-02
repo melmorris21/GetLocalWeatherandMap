@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity">
+
+    <ImageView
+        android:id="@+id/textViewWeather"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="116dp"
+        android:text="Location"
+        app:layout_constraintStart_toEndOf="@+id/textViewWeather"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeather">
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Temperature:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="192dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Weather:" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predicted High:" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predicted Low:" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's Forecast:" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tonight's Forecast:" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocation">
+
+        <TextView
+            android:id="@+id/textViewTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:text="Current Temperature:" />
+
+        <TextView
+            android:id="@+id/textViewWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Weather:" />
+
+        <TextView
+            android:id="@+id/textViewHighTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predicted High:" />
+
+        <TextView
+            android:id="@+id/textViewLowTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predicted Low:" />
+
+        <TextView
+            android:id="@+id/textViewPredictionToday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's Forecast:" />
+
+        <TextView
+            android:id="@+id/textViewPredictionTonight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tonight's Forecast:" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
